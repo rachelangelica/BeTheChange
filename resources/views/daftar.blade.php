@@ -35,7 +35,7 @@
           id="password"
           placeholder="Masukan password anda"
         />
-        <label for="password">Konfirmasi Password:</label>
+        <label for="konfirmasi-password">Konfirmasi Password:</label>
         <input
           type="password"
           name="konfirmasi-password"
