@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile {{$nama}}</title>
-    <link rel="stylesheet" href="/resources/css/profile-style.css" />
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/profile-style.css') }}" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -13,12 +13,12 @@
     <!-- BODY -->
     <div class="container">
       <div class="user-container">
-        <img src="/public/profile-picture.png">
+        <img src="{{ URL::asset('assets/profile-picture.png') }}">
         <div class="user-info">
-            <h3>{{$nama}}</h3>
-            <p>{{$alamat}}</p>
-            <p>{{$umur}}</p>
-            <p>{{$tipeakun}}</p>
+            <h3>nama</h3>
+            <p>alamat</p>
+            <p>umur</p>
+            <p>tipeakun</p>
         </div>
       </div>
       <form action="#">
