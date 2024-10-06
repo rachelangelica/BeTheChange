@@ -13,7 +13,7 @@
     <!-- BODY -->
     <div class="container">
       <div class="user-container">
-        <img src="./img/profile-picture.png">
+        <img src="/public/profile-picture.png">
         <div class="user-info">
             <h3>{{$nama}}</h3>
             <p>{{$alamat}}</p>
