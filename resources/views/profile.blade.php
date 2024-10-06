@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/profile-style.css') }}" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <div class="navbar"></div>
+@extends('layouts.layout')
+<title>Profile</title>
+<link href="{{ asset('assets/css/profile-style.css') }}" rel="stylesheet">
 
+@section('content')
     <!-- BODY -->
     <div class="container">
       <div class="user-container">
-        <img src="{{ URL::asset('assets/profile-picture.png') }}">
+        <img src="{{ asset('assets/images/profile-picture.png') }}" class="image">
         <div class="user-info">
-            <h3>nama</h3>
-            <p>alamat</p>
-            <p>umur</p>
-            <p>tipeakun</p>
+            <h3>Nama</h3>
+            <p>Alamat</p>
+            <p>Umur</p>
+            <p>TipeAkun</p>
         </div>
       </div>
       <form action="#">

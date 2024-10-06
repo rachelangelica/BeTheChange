@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/daftar-style.css') }}" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <div class="navbar"></div>
+@extends('layouts.layout')
+<title>Daftar</title>
+<link href="{{ asset('assets/css/daftar-style.css') }}" rel="stylesheet">
 
+@section('content')
     <!-- BODY -->
     <div class="container">
       <h1>DAFTAR</h1>
@@ -68,8 +61,4 @@
     <div class="to-login">
       <p>Sudah memiliki akun? <a>Login disini</a></p>
     </div>
-
-    <!-- FOOTER -->
-    <div class="footer"></div>
-  </body>
-</html>
+@endsection

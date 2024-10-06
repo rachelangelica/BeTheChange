@@ -1,4 +1,3 @@
-
 @extends('layouts.layout')
 <title>Detail Report</title>
 <link href="{{ asset('assets/css/detail-report-style.css') }}" rel="stylesheet">

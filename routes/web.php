@@ -21,3 +21,11 @@ Route::get('/create/report', function () {
 Route::get('/create/event', function () {
     return view('create-event');
 })->name('create-event');
+
+Route::get('/daftar', function () {
+    return view('daftar');
+})->name('daftar');
+
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
