@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    background-color: #07689F;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    justify-content: left;
+    position: sticky;
+    top: 0; /* Sticks at the top */
+    z-index: 999; /* Adjust this if needed to keep the navbar on top */
+    width: 100%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    height: 100px;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    padding: 20px 2%;
+    background: #A2D5F2;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.footerlogo{
+    width: 350px;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    letter-spacing: 1;
+}
+.col-3 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    font-size: 35px;
+    margin: 15px;
+    cursor: pointer;
+}
+.social-icons p{
+    color: black;
+}
+.footer .col-1,
+.footer .col-2,
+.footer .col-3 {
+  flex: 1;
+  text-align: center;
+}
+.footer .col-1 {
+    justify-content: flex-start;
+}
+.footer .col-3 {
+    justify-content: flex-end;
+}
+
+/* HAMBURGER */
+a,button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation{
+    position: fixed;
+    right: -500px;
+    width: 300px;
+    height: 100%;
+    background-color: #07689F;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navigation ul li{
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    border-bottom: 1pt solid #A2D5F2;
+    font-weight: bold;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    display: block;
+    position: fixed;
+    top: 8%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+    z-index: 1000;
+}
+
+.bar{
+    top: 3px;
+    background: #fff;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+    z-index: 1000;
+}
+
+.hamburger.open #bar1{
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,13 @@
         <img class="logo" src="img/logo2.png" alt="logo">
     </div>
 
+=======
+@extends('layouts.layout')
+<title>Create Report</title>
+<link href="{{ asset('assets/css/report-style.css') }}" rel="stylesheet">
+   
+@section('content')
+>>>>>>> dfc94370674613d1b10f3929e194620529f59452
     <!-- BODY -->
     <div class="container">
         <h1>Laporan Kegiatan</h1>
@@ -23,6 +31,7 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+<<<<<<< HEAD
 
     <!-- FOOTER -->
     <div class="footer">
@@ -49,3 +58,6 @@
     </div>
 </body>
 </html>
+=======
+@endsection
+>>>>>>> dfc94370674613d1b10f3929e194620529f59452
