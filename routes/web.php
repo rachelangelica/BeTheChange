@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\PastEventController;
 
 // Updated to return the homepage view
 Route::get('/', function () {
@@ -12,9 +13,7 @@ Route::get('/', function () {
 Route::get('/event', [EventController::class, 'show'])->name('event');
 
 // Other routes
-Route::get('/detail/report', function () {
-    return view('detail-report');
-})->name('detail-report');
+Route::get('/detail/report', [PastEventController::class, 'show'])->name('detail-report');
 
 Route::get('/create/report', function () {
     return view('report');
