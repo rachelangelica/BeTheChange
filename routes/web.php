@@ -31,3 +31,11 @@ Route::get('/daftar', function () {
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
+
+Route::get('/activity', function () {
+    return view('activity');
+})->name('activity');
+
+Route::get('/history/activity', function () {
+    return view('history-activity');
+})->name('history-activity');
